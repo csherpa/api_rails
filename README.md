@@ -1,5 +1,7 @@
 
 # Rails::API
+
+![API](https://i.imgflip.com/1e6ocg.jpg)
 ## Rails for API only apps
 Quick walk-through of Rail::API
 
