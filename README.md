@@ -12,23 +12,23 @@ Quick walk-through of Rail::API
 
 # CONTENTS
 
-*Installing
-*Middleware
-*Controller Modules
+* Installing
+* Middleware
+* Controller Modules
 
 
 
 # Installing
 ### Creating a new application
 
-Generate a new Rails::API app
+ # Generate a new Rails::API app
 ### $rails new [api_name] --api
-NOTE: You can add -d [database] if you don't want to use postgresql
+> NOTE: You can add -d [database] if you don't want to use postgresql
 This will do few things for you:
 
 * It will make your applicationcontroller inherit from ActionController::API instead of ActionController::Base. 
 
-  *Configure the generators to skip generating views, helpers and assets when you generate a new resource.
+  * Configure the generators to skip generating views, helpers and assets when you generate a new resource.
 
 
 ### Changing an existing application
@@ -49,11 +49,11 @@ NOTE: By default, config.debug_exception_response_format is set to :api, when co
 
   * Finally, inside app/controllers/application_controller.rb, instead of:
 
-   class ApplicationController < ActionController::Base
-         end
+    > class ApplicationController < ActionController::Base
+    >  end
 
-    class ApplicationController < ActionController::API
-        end
+    > class ApplicationController < ActionController::API
+    >  end
 
 
 
@@ -80,13 +80,13 @@ An API application comes with the following middlleware by default:
 
 
 YOU CAN GET A LIST OF ALL MIDDLEWARE IN YOUR APPLICATION :
-### $rails middleware<
+> $rails middleware
 
 Removing Middleware
 If you don't want to use a middleware that is included by default in the API-only middleware set, you can remove it with:
 
 
-### config.middleware.delete ::Rack::Sendfile
+> config.middleware.delete ::Rack::Sendfile
 
 
 ## CONTROLLER MODULES
@@ -120,3 +120,7 @@ Support for basic, digest or token HTTP authentication:
 * ActionController::Cookies: Support for cookies, which includes support for signed and encrypted cookies. This requires the cookies middleware.
 * The best place to add a module is in your ApplicationController, but you can also add modules to individual controllers.
 
+
+## References:
+
+[Rails](https://guides.rubyonrails.org/api_app.html)
