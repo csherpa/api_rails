@@ -7,7 +7,7 @@ Quick walk-through of Rail::API
 
 * What Rails::API provides for API-only apps
 * How to work with the middleware you want to include
-* How to decide which modules to use in your computer
+* How to decide which modules to use in your controller
 
 
 # CONTENTS
