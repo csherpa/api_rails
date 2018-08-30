@@ -23,7 +23,7 @@ Quick walk-through of Rail::API
 
  # Generate a new Rails::API app
 ### $rails new [api_name] --api
-> NOTE: You can add -d [database] if you don't want to use postgresql
+> NOTE: You can add -d [database] if you don't want to use postgresql 
 This will do few things for you:
 
 * It will make your applicationcontroller inherit from ActionController::API instead of ActionController::Base. 
@@ -57,7 +57,9 @@ NOTE: By default, config.debug_exception_response_format is set to :api, when co
 
 
 
-# Middleware
+# MIDDLEWARE
+
+> Middleware is a way to filter a request and response coming into your application
 An API application comes with the following middlleware by default:
 
 
